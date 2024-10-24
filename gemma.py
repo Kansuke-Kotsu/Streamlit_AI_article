@@ -5,8 +5,8 @@ import google.generativeai as genai
 st.title("副業サポート 記事添削ツール")
 
 # APIキーの設定
-#genai.configure(api_key=st.secrets["gemini_key"])
-genai.configure(api_key="AIzaSyDOkxdeIGiGBWnn93c-znm89dLZ5yf0flM")
+genai.configure(api_key=st.secrets["gemini_key"])
+#genai.configure(api_key="AIzaSyDOkxdeIGiGBWnn93c-znm89dLZ5yf0flM")
 
 # ユーザーの入力を受け取る
 title = st.text_input("ブログ記事のタイトルを入力してください")
